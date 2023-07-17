@@ -1,0 +1,63 @@
+API's
+localhost:5000/api/auth/register : Register User
+{
+   "username" : "sourabh",
+   "email" : "singhsourabh425@gmail.com",
+   "password" : 123456
+}
+
+localhost:5000/api/auth/login : Login User
+{
+   "username" : "sourabh",
+   "password" : 123456
+}
+
+
+localhost:5000/api/users/:id : Update/Delete User
+Use Id to use put after endpoint
+
+localhost:5000/api/users/find/:id : Find User
+localhost:5000/api/users : Get All User
+localhost:5000/api/users/stats : Get User Stats
+Pass query  new : true
+localhost:5000/api/products : Create Product
+{
+   "title" : "puma",
+   "desc" : "test",
+   "img" : "test",
+ "categories" : "["tshirt","man"]",
+ "size" : "M",
+ "color" : "gray",
+ "price" : 300
+}
+
+localhost:5000/api/products/:id :  Update/Delete Product
+localhost:5000/api/products/find/:id : Get Product
+localhost:5000/api/products : Get All Products.
+
+localhost:5000/api/carts :  create Cart
+localhost:5000/api/carts/:id : Update/Delete Cart
+localhost:5000/api/carts/find/:userId : Get User Cart
+localhost:5000/api/carts : Get All
+
+localhost:5000/api/orders  : CREATE
+{
+   "userId" : "112121221222",
+   "products" :[
+                  {
+                        "productId" :"21ee2",
+                         "quantity":2
+                    },
+                   {
+              "productId" :"21ee2",
+                         "quantity":2
+                    },
+"amount": 50,
+"address": "India"
+  }
+
+localhost:5000/api/orders/:id : UPDATE/DELETE
+localhost:5000/api/orders/find/:userId : GET USER ORDERS
+localhost:5000/api/orders : GET ALL
+localhost:5000/api/orders/income : GET MONTHLY INCOME
+
